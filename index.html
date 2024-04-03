@@ -9,7 +9,7 @@
             font-family: 'Arial', sans-serif;
             text-align: center;
             margin-top: 50px;
-            background-color: #aa72ea;
+            background-color: #ffe0e0;
             padding: 20px;
         }
 
@@ -23,7 +23,7 @@
         }
 
         h2 {
-            color: #8821f6;
+            color: #d6336c;
             font-size: 24px;
             margin-bottom: 30px;
         }
@@ -79,7 +79,7 @@
 <body>
 
     <div id="container">
-        <h2>¿Quieres ir por sushi el 14?</h2>
+        <h2>¿Quieres ir a un miradorcito conmigo mañana? (prometo darte besitos)</h2>
         <button id="siButton">Sí</button>
         <button id="noButton">No</button>
         <div id="result"></div>
@@ -92,15 +92,14 @@
 
         const frasesGraciosas = [
             "¿Seguro que no? ¡Piénsalo mejor!",
-            "¡Vamos, da una oportunidad a una buena charla sobre libritos!",
-            "No tengas vergüenza, ¡se que amas el sushi!",
+            "¡Vamos, da una oportunidad al amor!",
+            "¡El amor es ciego, pero no inexistente!",
+            "No tengas vergüenza, ¡el amor espera!",
             "¿Y si es tu destino decir que sí?",
             "Rechazar puede ser fácil, ¡pero aceptar es más divertido!",
-            "¡Ya sabes que yo no muerdo a no ser que sea sushi!",
-            "Una oportunidad para el vermos, ¡no se niega!",
-            "¡Decir 'sí' podría ser el comienzo de algo maravilloso!",
-            "Hace musho no nos vemos... No le demos mas largas",
-            "Prometo aprenderme chistes para ese dia"
+            "¡El amor no muerde, prometido!",
+            "Una oportunidad para el amor, ¡no se niega!",
+            "¡Decir 'sí' podría ser el comienzo de algo maravilloso!"
         ];
 
         document.getElementById('noButton').addEventListener('click', () => {
@@ -127,7 +126,7 @@
             noButton.style.filter = 'none';
             clickCount = 0;
 
-            result.innerHTML = `<p>Sabía que dirías que sí, Doña Maribel de Jesus 🥹</p><img src="images/happy.jpg" width="200px" height="100px">`;
+            result.innerHTML = `<p>Sabía que dirías que sí ❤️</p><img src="images/happy.jpg" width="200px" height="100px">`;
             for (let i = 0; i < 300; i++) {
                 createHeart();
             }
@@ -136,7 +135,7 @@
         function createHeart() {
             const heart = document.createElement('div');
             heart.className = 'heart';
-            heart.innerHTML = '🍣';
+            heart.innerHTML = '❤️';
             document.body.appendChild(heart);
             heart.style.left = Math.random() * 100 + 'vw';
             heart.style.animationDuration = Math.random() * 2 + 3 + 's'; // Duración entre 3-5s
