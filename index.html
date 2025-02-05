@@ -109,7 +109,7 @@
             siButton.style.padding = `${paddingVert + 1}px ${paddingHoriz + 5}px`;
 
             let randomNumber = Math.floor(Math.random() * frasesGraciosas.length);
-            let randomNumberImg = Math.floor(Math.random() * 10 + 1);
+            let randomNumberImg = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
             result.innerHTML = `<p>${frasesGraciosas[randomNumber]}</p><img src="images/${randomNumberImg}.jpg" width="200px" height="100px">`;
         });
 
